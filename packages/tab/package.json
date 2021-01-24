@@ -1,0 +1,27 @@
+{
+  "name": "future-tab",
+  "version": "1.0.1",
+  "description": "mobile touch-swappable",
+  "author": "future@163.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feiqi0707/future-tab.git"
+  },
+  "keywords": [
+    "Vue",
+    "component",
+    "mobile",
+    "swap",
+    "reusable"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feiqi0707/future-tab/issues"
+  },
+  "homepage": "https://github.com/feiqi0707/future-tab#readme"
+}
