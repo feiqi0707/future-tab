@@ -1,19 +1,22 @@
 <template>
-<div class="future-tab">
+<div class="tab-list">
   <future-tabbar
     v-model="selectedId"
     v-bind="options"
   >
     <future-tab-item
-      v-for="(item, index) in items"
+      class="tab-item"
+      v-for="(item, index) in items.contents"
       :key="index"
+      :style="items.customStyle"
       >
-      <span
-        v-if="options.fixBottom && item.icon"
+      <div
+        v-if="options.fixBottom && item.title.icon"
         slot="icon">
-        <i :class="item.icon"></i>
-      </span>
-      <span>{{ item[labelKey] }}</span>
+        <i :class="item.title.icon"></i>
+      </div>
+      <div class="title" :style="item.title.customStyle">{{ item.title.name }}</div>
+      <div class="sub-title" :style="item.subTitle && item.subTitle.customStyle">{{ item.subTitle && item.subTitle.name }}</div>
     </future-tab-item>
   </future-tabbar>
 </div>
@@ -35,9 +38,9 @@ export default {
       default: 0
     },
     items: {
-      type: Array,
+      type: Object,
       default () {
-        return []
+        return {}
       }
     },
     options: {
@@ -70,5 +73,23 @@ export default {
 </script>
 
 <style>
+
+.tab-list{
+  background-color: #c5c1c1;
+}
+/*
+.tab-list .tab-item{
+  padding: 5px 20px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+ .tab-list .tab-item .title{
+   margin-bottom: 2px;
+}
+
+/*.tab-list .tab-item .sub-title{
+} */
 
 </style>

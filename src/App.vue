@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-@import "./assets/icons/iconfont.css";
+@import "./assets/icon/iconfont.css";
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

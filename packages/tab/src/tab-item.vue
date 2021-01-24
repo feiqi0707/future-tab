@@ -36,9 +36,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  text-align: center;
 }
 
 .future-tab-item-icon {

@@ -6,11 +6,11 @@
          :style="style"
          ref="list">
       <slot></slot>
-      <div class="future-tab-active-bar"
+      <!-- <div class="future-tab-active-bar"
           v-if="!fixBottom"
           :style="activeBarStyle"
           ref="activeBar">
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

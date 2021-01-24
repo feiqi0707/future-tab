@@ -25,27 +25,45 @@ export default {
     return {
       selectedId: 4,
       bottomSelectedId: 0,
-      items: [
-        {label: '首页'},
-        {label: '推荐'},
-        {label: 'Android'},
-        {label: '前端'},
-        {label: '后端'},
-        {label: 'iOS'},
-        {label: '产品'},
-        {label: '人工智能'},
-        {label: '设计'}
-      ],
+      items: {
+        contents:
+        [
+          {
+            title: {name: '首页', customStyle: {textAlign: 'left'}},
+            subTitle: {name: '子标题', customStyle: {textAlign: 'left'}},
+            customStyle: {textAlign: 'left'}
+          },
+          {
+            title: {name: '首页1', customStyle: {textAlign: 'left'}},
+            subTitle: {name: '子标题1', customStyle: {textAlign: 'left'}},
+            customStyle: {textAlign: 'left'}
+          },
+          {
+            title: {name: '首页', customStyle: {textAlign: 'left'}},
+            subTitle: {name: '子标题', customStyle: {textAlign: 'left'}},
+            customStyle: {textAlign: 'left'}
+          },
+          {
+            title: {name: '首页1', customStyle: {textAlign: 'left'}},
+            subTitle: {name: '子标题1', customStyle: {textAlign: 'left'}},
+            customStyle: {textAlign: 'left'}
+          }
+        ],
+        customStyle: {flexGrow: 0, width: '85px', backgroundColor: '#fff', borderRadius: '5px', textAlign: 'left', padding: '5px 20px', height: '50px'}
+      },
       options: {
         activeColor: '#1d98bd',
         fixBottom: false
       },
-      bottomItems: [
-        {text: '首页', icon: 'iconfont icon-Homehomepagemenu'},
-        {text: '消息', icon: 'iconfont  icon-message'},
-        {text: '发现', icon: 'iconfont  icon-search'},
-        {text: '我的', icon: 'iconfont  icon-me'}
-      ],
+      bottomItems: {
+        contents: [
+          {title: {name: '首页', icon: 'iconfont icon-Homehomepagemenu', customStyle: {}}},
+          {title: {name: '消息', icon: 'iconfont icon-message', customStyle: {}}},
+          {title: {name: '发现', icon: 'iconfont icon-search', customStyle: {}}},
+          {title: {name: '我的', icon: 'iconfont icon-me', customStyle: {}}}
+        ],
+        customStyle: {flexGrow: 1}
+      },
       bottomOptions: {
         activeColor: '#1d98bd',
         fixBottom: true,
@@ -63,6 +81,4 @@ export default {
 </script>
 
 <style>
-.demo{
-}
 </style>
