@@ -66,7 +66,7 @@ export default {
     },
     selectedId (value) {
       this.$emit('input', value)
-      this.$emit('change', this.items[value], value)
+      this.$emit('change', this.items.contents[value], value)
     }
   }
 }
